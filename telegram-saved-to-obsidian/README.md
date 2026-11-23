@@ -28,7 +28,7 @@ Whiteboard from Monday's workshop
 - A **Telegram account** and your own `api_id` / `api_hash` from https://my.telegram.org — [step-by-step guide](docs/setup-telegram-api.md).
 - For **voice notes only**:
   - a Mac with **Apple Silicon** (M1/M2/M3/M4) — transcription uses [`mlx-whisper`](https://github.com/ml-explore/mlx-examples/tree/main/whisper);
-  - **ffmpeg** (`brew install ffmpeg`).
+  - **ffmpeg** (`brew install ffmpeg`). Telegram sends voice notes as compressed Opus audio in an `.ogg` file, and Whisper can't read that format directly: it calls ffmpeg to turn the audio into the raw 16 kHz waveform the model needs. Without ffmpeg, every transcription fails (your audio stays safe in the cache and the message stays in Telegram).
 
   Text and images work on any OS. Without voice support, voice notes are left untouched in Telegram.
 
