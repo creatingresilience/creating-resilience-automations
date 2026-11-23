@@ -1,0 +1,16 @@
+[project]
+name = "telegram-saved-to-obsidian"
+version = "0.1.0"
+description = "Import Telegram Saved Messages (text, voice, images) into an Obsidian inbox."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "telethon>=1.36",
+]
+
+[project.optional-dependencies]
+# Voice transcription — Apple Silicon (arm64 macOS) only.
+voice = [
+    "mlx-whisper>=0.4",
+]
