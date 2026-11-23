@@ -36,7 +36,7 @@ Whiteboard from Monday's workshop
 
 ```bash
 # 1. Get the code
-git clone https://github.com/cwaihai/creating-resilience-automations.git
+git clone https://github.com/creatingresilience/creating-resilience-automations.git
 cd creating-resilience-automations/telegram-saved-to-obsidian
 
 # 2. Create a Python 3.12 environment and install
