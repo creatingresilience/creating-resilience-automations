@@ -3,7 +3,7 @@
 Import Telegram "Saved Messages" into an Obsidian inbox folder.
 
 - Text messages   -> one Markdown note per message.
-- Voice messages  -> downloaded, transcribed locally with mlx-whisper
+- Voice messages  -> download once mlx-whisper model from Hugging Face and transcribed locally
                      (Apple Silicon only), transcript saved as a note.
 - Images / albums -> files saved to <inbox>/_assets/ and embedded with ![[...]];
                      an album (same Telegram grouped_id) becomes one note.
